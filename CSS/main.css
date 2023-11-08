@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-color: red;
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+.button-link {
+    display: inline-block;
+    color: #333;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 2px solid #333;
+
+}
+
+.button-link::after {
+    content: " (" attr(href) "). ";
+}
+
+.button-link:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.box1 {
+    background-color: brown;
+    /* margin-top: 5px; */
+    /* padding-right: 10px; */
+}
+
+.box2 {
+    background-color: black;
+
+}
+
+.box3 {
+    background-color: orange;
+    padding: 10px;
+    border: 10px solid #333;
+}
+
+/*.box::after {
+    content: attr(data-title);
+    color: red;
+}
+
+.box:active {
+    background-color: black;
+}
+
+.box::after {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+}
